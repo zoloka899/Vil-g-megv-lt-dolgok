@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, rgb(202, 174, 49), rgb(230, 14, 14));
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand_title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.brand-logo {
+    height:90px;
+    width: 90px;
+}
+
+#fetch {
+    padding: 10px 20px;
+    background-color: #D01F4D;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

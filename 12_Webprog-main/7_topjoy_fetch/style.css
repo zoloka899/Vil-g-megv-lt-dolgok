@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1c203a;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-container {
+    margin-bottom: 1rem;
+}
+
+.img-fliud {
+    max-width: 100%;
+    height: auto;
+}
+
+.message-box, .custom-button {
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 1.25rem;
+    border-radius: 0.25rem;
+    border: none;
+}
+
+.message-box {
+    background-color: #23AF6B;
+    
+}
+
+.custom-button{
+    background-color: #28A745;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: #218838;
+    filter: grayscale(10%);
+}

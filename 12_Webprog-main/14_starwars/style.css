@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+}
+
+select {
+    color: white;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    background: black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+select:focus {
+    border-radius: 10px;
+}
+
+.card {
+    background-color: black;
+    width: 400px;
+    max-height: fit-content;
+    padding: 1rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: auto;
+}
+
+.nev {
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: orange;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+option {
+    color: white;
+}
+
+#tarolo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+}

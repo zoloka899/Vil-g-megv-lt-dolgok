@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #2F5E4D;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+#moodImage {
+    height: 200px;
+}
+
+.mood-slider {
+    width: 100%;
+    height: 5px;
+    background-color: #cccccc;
+    color: white;
+    border-radius: 5rem;
+}
+
+/* Google chrome, safari */
+.mood-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+}
+
+/* firefox */
+.mood-slider::-moz-range-thumb {
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+}
