@@ -1,16 +1,19 @@
-const cities =document.querySelector('#cities')
+const cities = document.querySelector('#cities');
 
-cities.addEventListener('change',()=>{
-    const selected=cities.value;
-    console.log(selected)
+cities.addEventListener('change', () => {
+    const selected = cities.value;
+    console.log(selected);
 
-    const demo=document.querySelector('#demo')
-    demo.textContent=selected;
-    const image=document.querySelector('#image')
-    const img=document.createElement('img')
-    img.src =`./img/${selected}.jpg`
-    img.alt =selected
-    img.title=selected
-    image.replaceChildren(img)
+    const demo = document.querySelector('#demo');
+    demo.textContent = selected;
+
+    const image = document.querySelector('#image');
+    const img = document.createElement('img');
+    img.src = `./img/${selected}.jpg`;
+    img.alt = selected;
+    img.title = selected;
+    console.log(img);
+
+    image.replaceChildren(img);
     
-})
+});

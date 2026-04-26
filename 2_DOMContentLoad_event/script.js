@@ -11,19 +11,29 @@ const cities = [
     { name: "Helsinki", value: "helsinki" },
     { name: "Professzor", value: "professor" },
 ];
-const select=document.querySelector('#city');
-window.addEventListener('DOMContentLoaded',betolt);
-function betolt(){
 
-    cities.forEach(city=> {
-        console.table(city)
-        const option = document.createElement('option')
-        option.value=city.value
+const select = document.querySelector('#city');
 
-        option.textContent=city.name
-        if (city.name=='Professzor'){
-            option.selected=true
+window.addEventListener('DOMContentLoaded', betolt);
+
+function betolt() {
+    cities.forEach(city => {
+        //console.table(city);
+        //<option> </option> tag létrehozása
+        const option = document.createElement('option');
+
+        //<option value = "város_neve"> </option>
+        option.value = city.value;
+
+        //<option value = "város_neve">Város_Neve</option>
+        option.textContent = city.name;
+
+        if (city.name === 'Professor') {
+            option.selected = true;
         }
-        select.append(option)
+
+        select.append(option);
     });
 }
+
+//Házi - megoldani a képcsere funkciót

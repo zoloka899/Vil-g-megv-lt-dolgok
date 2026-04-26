@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #1C203A;
+    background: #1c203a;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
@@ -15,7 +15,6 @@ body {
 
 .container {
     width: 75%;
-    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,17 +25,16 @@ body {
     margin-bottom: 1rem;
 }
 
-.img-fluid {
+.img-fliud {
     max-width: 100%;
     height: auto;
 }
 
-.message-box,
-.custom-button {
+.message-box, .custom-button {
     color: #FFF;
     width: 100%;
-    height: 5rem;
     text-align: center;
+    height: 5rem;
     line-height: 5rem;
     font-size: 1.25rem;
     border-radius: 0.25rem;
@@ -45,14 +43,15 @@ body {
 
 .message-box {
     background-color: #23AF6B;
-
+    
 }
 
-.custom-button {
+.custom-button{
     background-color: #28A745;
     cursor: pointer;
 }
 
 .custom-button:hover {
-    filter: grayscale(20%);
+    background-color: #218838;
+    filter: grayscale(10%);
 }

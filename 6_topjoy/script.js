@@ -1,6 +1,3 @@
-const messageBox = document.querySelector('#messageBox');
-const messageButton = document.querySelector('#messageButton');
-
 const messages = [
     "A BELSŐ SZÁMÍT",
     "A CSILLAGOK FIGYELNEK",
@@ -428,6 +425,12 @@ const messages = [
     "VIGYÉL EGY JÓ HÍRT!",
 ];
 
-messageButton.addEventListener("click", () => {
-    messageBox.textContent = messages[Math.floor(Math.random() * messages.length)];
+const messageButton = document.querySelector('#messageButton');
+// console.log(messageButton);
+
+messageButton.addEventListener('click', ()=>{
+    const randomIndex = Math.floor(Math.random() * messages.length);
+    // console.log(randomIndex);
+    const messageBox = document.querySelector('#messageBox');
+    messageBox.textContent = messages[randomIndex];
 })
