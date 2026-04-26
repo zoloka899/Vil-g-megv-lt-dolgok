@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: green;
+    background-image: url('images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tarolo {
+    width: 250px;
+    position: relative;
+    cursor: pointer;
+}
+
+.hatter-kep {
+    position: absolute;
+    z-index: 0;
+}
+
+#kupak {
+    height: 400px;
+    width: 250px;
+    background-image: url("./images/bottlecap_0.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.szoveg-tarolo {
+    position: absolute;
+    height: 400px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    z-index: 1;
+}
+
+#szoveg {
+    text-align: center;
+    overflow-wrap: break-word;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.tarolo.nyit #kupak {
+    animation: nyitas 1s forwards;
+}
+
+.text-nyit {
+    animation: ddd 1s forwards;
+}
+
+.text-zar {
+    animation: ddd 1s backwards;
+}
+
+.tarolo.zar #kupak {
+    animation: nyitas 1s backwards;
+}
+
+@keyframes ddd {
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+
+@keyframes nyitas {
+    0% {
+        background-image: url("./images/bottlecap_0.png");
+    }
+ 
+    10% {
+        background-image: url("./images/bottlecap_1.png");
+        transform: rotate(36deg);
+    }
+ 
+    20% {
+        background-image: url("./images/bottlecap_2.png");
+        transform: rotate(72deg);
+    }
+ 
+    30% {
+        background-image: url("./images/bottlecap_3.png");
+        transform: rotate(108deg);
+    }
+ 
+    40% {
+        background-image: url("./images/bottlecap_4.png");
+        transform: rotate(144deg);
+    }
+    
+    50% {
+        background-image: url("./images/bottlecap_5.png");
+        transform: rotate(180deg);
+    }
+    
+    60% {
+        background-image: url("./images/bottlecap_6.png");
+        transform: rotate(216deg);
+    }
+        
+    70% {
+        background-image: url("./images/bottlecap_7.png");
+        transform: rotate(252deg);
+    }
+    
+    80% {
+        background-image: url("./images/bottlecap_8.png");
+        transform: rotate(288deg);
+    }
+    
+    90% {
+        background-image: url("./images/bottlecap_9.png");
+        transform: rotate(324deg);
+    }
+ 
+    100% {
+        background-image: url("./images/bottlecap_10.png");
+        transform: rotate(360deg);
+    }
+}
